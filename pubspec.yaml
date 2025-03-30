@@ -3,7 +3,7 @@ description: A Flutter plugin for capturing native screenshots on Android and iO
 version: 1.0.0
 homepage: https://github.com/SujitChanda/flutter_native_screenshot_plus
 repository: https://github.com/SujitChanda/flutter_native_screenshot_plus
-
+license: MIT
 environment:
   sdk: '>=3.0.0 <4.0.0'
   flutter: '>=3.3.0'
