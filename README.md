@@ -1,4 +1,4 @@
-# Flutter Native Screenshot Plus \ud83d\udcf8
+# Flutter Native Screenshot Plus 📸
 
 [![pub package](https://img.shields.io/pub/v/flutter_native_screenshot_plus.svg)](https://pub.dev/packages/flutter_native_screenshot_plus)
 [![License: MIT](https://img.shields.io/badge/license-MIT-purple.svg)](https://opensource.org/licenses/MIT)
@@ -7,27 +7,27 @@
 A high-performance Flutter plugin for capturing native screenshots with PixelCopy support (Android 8.0+). Captures exactly what users see on screen.
 
 ## Table of Contents
-- [Features](#features-)
-- [Installation](#installation-)
-- [Platform Setup](#platform-setup-)
+- [Features](#features-✨)
+- [Installation](#installation-🔧)
+- [Platform Setup](#platform-setup-⚙️)
   - [Android](#android)
   - [iOS](#ios)
-- [Usage](#usage-)
-- [Permission Handling](#permission-handling-)
-- [Example Project](#example-project-)
-- [FAQ](#faq-)
-- [Troubleshooting](#troubleshooting-)
-- [Contributing](#contributing-)
-- [License](#license-)
+- [Usage](#usage-🚀)
+- [Permission Handling](#permission-handling-🔐)
+- [Example Project](#example-project-🧩)
+- [FAQ](#faq-❓)
+- [Troubleshooting](#troubleshooting-⚠️)
+- [Contributing](#contributing-🤝)
+- [License](#license-📜)
 
-## Features \u2728
+## Features ✨
 - **Native Performance**: Uses platform-specific APIs (PixelCopy on Android)
 - **High Fidelity**: Captures exactly what's displayed on screen
 - **Simple API**: Single method call with path return
 - **Automatic Media Scanning**: Screenshots appear in gallery immediately
 - **Thread-Safe**: Background processing for large screenshots
 
-## Installation \ud83d\udee0
+## Installation 🔧
 Add to your `pubspec.yaml`:
 
 ```yaml
@@ -40,7 +40,7 @@ Then run:
 flutter pub get
 ```
 
-## Platform Setup \u2699\ufe0f
+## Platform Setup ⚙️
 
 ### Android
 1. Add permissions to `android/app/src/main/AndroidManifest.xml`:
@@ -63,7 +63,7 @@ Add to `ios/Runner/Info.plist`:
 <string>$(PRODUCT_NAME) saves screenshots to your photo library</string>
 ```
 
-## Usage \ud83d\ude80
+## Usage 🚀
 Basic implementation:
 ```dart
 import 'package:flutter_native_screenshot_plus/flutter_native_screenshot_plus.dart';
@@ -79,7 +79,7 @@ if (path != null) {
 }
 ```
 
-## Permission Handling \ud83d\udd10
+## Permission Handling 🔐
 This plugin requires these permissions but doesn't handle runtime requests. We recommend using [permission_handler](https://pub.dev/packages/permission_handler):
 
 ```dart
@@ -90,14 +90,14 @@ if (status[Permission.storage]!.isGranted) {
 }
 ```
 
-## Example Project \ud83e\uddea
+## Example Project 🧩
 See complete implementation in the [example folder](example/). To run:
 ```bash
 cd example
 flutter run
 ```
 
-## FAQ \u2753
+## FAQ ❓
 
 ### Where are screenshots saved?
 | Platform | Location |
@@ -118,7 +118,7 @@ Use the [share_plus](https://pub.dev/packages/share_plus) package:
 await Share.shareXFiles([XFile(screenshotPath)]);
 ```
 
-## Troubleshooting \u26a0\ufe0f
+## Troubleshooting ⚠️
 
 ### Android Errors
 - **"File not found"**: Check if storage permissions are granted
@@ -128,7 +128,7 @@ await Share.shareXFiles([XFile(screenshotPath)]);
 - **Missing permissions**: Verify Info.plist entries
 - **Sandbox issues**: Use app-specific directories
 
-## Contributing \ud83e\udd1d
+## Contributing 🤝
 We welcome contributions! Please follow these steps:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
@@ -136,12 +136,9 @@ We welcome contributions! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License \ud83d\udcdd
+## License 📜
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Made with \u2764\ufe0f by [Your Name]. Happy screenshotting! \ud83d\udcf1\ud83d\udca5
-
-# flutter_native_screenshot_plus
-# flutter_native_screenshot_plus
+Made with ❤️ by Sujit Chanda. Happy screenshotting! 📱💥
