@@ -1,0 +1,34 @@
+name: flutter_native_screenshot_plus
+description: A Flutter plugin for capturing native screenshots on Android and iOS with PixelCopy support
+version: 1.0.0
+homepage: https://github.com/yourusername/flutter_native_screenshot_plus
+repository: https://github.com/yourusername/flutter_native_screenshot_plus
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.2
+  meta: ^1.8.0
+  permission_handler: ^11.4.0
+  device_info_plus: ^11.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  integration_test:
+    sdk: flutter
+  image: ^4.0.17 # For image verification in tests
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.flutter_native_screenshot.plus.flutter_native_screenshot_plus
+        pluginClass: FlutterNativeScreenshotPlusPlugin
+      ios:
+        pluginClass: FlutterNativeScreenshotPlusPlugin
